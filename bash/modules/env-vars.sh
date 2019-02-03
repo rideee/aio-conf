@@ -2,7 +2,7 @@
 # This file contains all user defined exported environment variables.
 
 # English terminal output.
-export LC_ALL=C
+export LC_MESSAGES=C
 
 # Vim as default editor.
 export EDITOR='vim'

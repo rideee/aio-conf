@@ -2,17 +2,19 @@
 #
 # Author: Michal Katnik (github.com/rideee).
 # License: GPL.
-
-# ps1-git.sh: set $PS1 variable. After execution prompt look like this:
 #
-#   username > current_dir_name $
+# This script sets $PS1 environment variable.
+# Default prompt looks like this:
+#
+#   user > current_dir $
 #
 # If in current directory is some git branch, transform to this:
 #
-#   git(master) userame > current_dir_name $
+#   git(master) user > current_dir $
 # 
 # Everything is colorized.
-# It is possible to define colors and format in variables below.
+#
+# For customization colors and format change values of variables below.
 
 function ps1-git() {
   # PS1 colors and format. It use modules/autoload/color.sh.
@@ -22,7 +24,7 @@ function ps1-git() {
   local PS1_PROMCHAR="\[$(color lblue)\]$\[$(color none)\]"
   
   # Check if root.
-  if [ $(whoami) = 'root' ]; then
+  if [ "$EUID" -eq 0 ]; then
     PS1_USR="\[$(color lred)\]\u\[$(color none)\]"
     PS1_PROMCHAR="\[$(color lred)\]"'#'"\[$(color none)\]"
   fi
@@ -38,9 +40,7 @@ function ps1-git() {
     PS1_GIT+="\[$(color lblue)\]) "
   fi
 
-  local PS1_STYLE="$PS1_GIT$PS1_USR $PS1_ARW $PS1_DIR $PS1_PROMCHAR "
-
-  export PS1=$PS1_STYLE
+  export PS1="$PS1_GIT$PS1_USR $PS1_ARW $PS1_DIR $PS1_PROMCHAR "
 }
 
 ps1-git

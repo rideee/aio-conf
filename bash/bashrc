@@ -1,26 +1,33 @@
+# This is ordered and divided into modules .bashrc file.
+# Check readme for more informations.
 #
-# ~/.bashrc
+# Author: Michal Katnik (github.com/rideee).
+# License: GPL.
 #
+# For manually connection use:
+#   ln -s [this_file] ~/.bashrc
 
 # If not running interactively, don't do anything.
 [[ $- != *i* ]] && return
 
-
-# Bashrc config modules directory path.
-# Full path because then is possible to make symbolic link to root .bashrc.
+# Bashrc modules directory path.
+# Use absolute path because then is possible to make symbolic link to root's
+# .bashrc, even if this file is store in $HOME directory.
 BASHRC_MODULES="/home/rid/.aio-conf/bash/modules"
 
-# Auto loader.
+# Auto loader - use autoloader for manage auto loaded scripts.
+# Run 'autoloader help' for more informations.
 source "$BASHRC_MODULES/autoload.sh"
 
-# General.
+# General config - use vigeneral for editing this file.
 source "$BASHRC_MODULES/general.sh"
 
-# $PS1-Git.
+# $PS1-GIT - For more informations use:
+#   head -n 15 $BASHRC_MODULES/ps1-git.sh | tail -n 10
 source "$BASHRC_MODULES/ps1-git.sh"
 
-# Aliases.
+# Aliases - use vialiases for editing this file.
 source "$BASHRC_MODULES/aliases.sh"
 
-# Environment variables.
+# Environment variables - use vienvs for editing this file.
 source "$BASHRC_MODULES/env-vars.sh"
