@@ -10,6 +10,7 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -lah'
 alias l='ls -1'
+alias ..='cd ..'
 
 # Reload .bashrc source.
 [ -f ~/.bashrc ] && alias reload='. ~/.bashrc'
