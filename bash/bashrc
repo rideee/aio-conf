@@ -42,6 +42,6 @@ source "$BASHRC_MODULES/env-vars.sh"
 # Check github page for readme.
 # Requires installation.
 [ "$(type hstr 2>/dev/null)"  ] \
-  && [[ -s "$BASHRC_MODULES/third-party/hstr/hstr.sh" ]] \
-  && source "$BASHRC_MODULES/third-party/hstr/hstr.sh"
+ && [[ -s "$BASHRC_MODULES/third-party/hstr/hstr.sh" ]] \
+ && source "$BASHRC_MODULES/third-party/hstr/hstr.sh"
 
