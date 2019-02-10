@@ -4,23 +4,14 @@
 # License: GPL.
 #
 # This script sets $PS1 environment variable.
-# Default prompt looks like this:
-#
-#   user > current_dir $
-#
-# If in current directory is some git branch, transform to this:
-#
-#   git(master) user > current_dir $
-# 
-# Everything is colorized.
-#
 # For customization colors and format change values of variables below.
 
 function ps1-git() {
   # PS1 colors and format. It use modules/autoload/color.sh.
-  local PS1_ARW="\[\033[1;92m>$(tput sgr0)\]"
+  #local PS1_ARW="\[\033[1;92m\]>\[$(tput sgr0)\]"
   local PS1_USR="\[$(color lblue)\]\u\[$(color none)\]"
-  local PS1_DIR="\[$(color yellow)\]\W\[$(color none)\]"
+  #local PS1_HOST="\[$(color lgreen)\]\h\[$(color none)\]"
+  local PS1_DIR="\[$(color yellow)\]\w\[$(color none)\]"
   local PS1_PROMCHAR="\[$(color lblue)\]$\[$(color none)\]"
   
   # Check if root.
@@ -40,7 +31,7 @@ function ps1-git() {
     PS1_GIT+="\[$(color lblue)\]) "
   fi
 
-  export PS1="$PS1_GIT$PS1_USR $PS1_ARW $PS1_DIR $PS1_PROMCHAR "
+  export PS1="$PS1_GIT$PS1_USR $PS1_DIR\n$PS1_PROMCHAR "
 }
 
 ps1-git

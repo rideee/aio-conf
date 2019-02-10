@@ -17,7 +17,10 @@ function vienvs() {
 alias ader=autoloader
 function autoloader() {
   case $1 in
-    list | ls) ls -1 $BASHRC_MODULES/autoload/
+    list | ls) 
+      for f in $BASHRC_MODULES/autoload/*; do
+        [[ ! -d $f ]] && basename $f
+      done
       ;;
     path | p) echo $BASHRC_MODULES/autoload/
       ;;
