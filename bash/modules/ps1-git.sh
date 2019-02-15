@@ -31,7 +31,7 @@ function ps1-git() {
     PS1_GIT+="\[$(color lblue)\]) "
   fi
 
-  export PS1="$PS1_GIT$PS1_USR $PS1_DIR\n$PS1_PROMCHAR "
+  export PS1="\[\e[100m\]$PS1_GIT$PS1_USR $PS1_DIR\[\e[0m\]\n$PS1_PROMCHAR "
 }
 
 ps1-git
