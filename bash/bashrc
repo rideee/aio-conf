@@ -31,17 +31,3 @@ source "$BASHRC_MODULES/aliases.sh"
 
 # Environment variables - use vienvs for editing this file.
 source "$BASHRC_MODULES/env-vars.sh"
-
-# Third-party.
-#
-# qfc (https://github.com/pindexis/qfc)
-[[ -s "$BASHRC_MODULES/third-party/qfc/bin/qfc.sh" ]] \
-  && source "$BASHRC_MODULES/third-party/qfc/bin/qfc.sh"
-
-# HSTR (https://github.com/dvorka/hstr)
-# Check github page for readme.
-# Requires installation.
-[ "$(type hstr 2>/dev/null)"  ] \
- && [[ -s "$BASHRC_MODULES/third-party/hstr/hstr.sh" ]] \
- && source "$BASHRC_MODULES/third-party/hstr/hstr.sh"
-
