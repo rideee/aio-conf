@@ -11,6 +11,10 @@
 
 
 alias bms=bookmarks
+alias bs='bookmarks s'
+alias bp='bookmarks p'
+alias bl='bookmarks ls'
+alias bj='bookmarks j'
 
 function bookmarks() {
   local BMS_MODULES="$BASHRC_MODULES/autoload/bookmarks"
@@ -144,7 +148,35 @@ function bookmarks() {
       ;;
 
     * )
+      echo -e "$(color magenta)# modules/autoload/bookmarks.sh$(color none)"
+      echo -e "$(color blue)This script allows you to save paths to"\
+        "directories as bookmarks with short names.\n"
+      echo -e "Usage:$(color none) bookmarks [OPTION] [NAME] *[PATH]"
+      echo -e "$(color yellow)*[PATH] - optional, default: current directory."
+      echo -e "[Alias 'bms' is also available]"
+      echo ''
+      echo -e "$(color blue)Options:$(color none)"
+      echo -e "  [save | s] [NAME] *[PATH]"
+      echo -e "\t$(color yellow)Save *[PATH] as [NAME].\n"\
+        "\t[Alias 'bs' -> 'bookmarks s']$(color none)\n"
+      
+      echo -e "  [print | p] [NAME]"
+      echo -e "\t$(color yellow)Print path named [NAME].\n"\
+        "\t[Alias 'bp' -> 'bookmarks p']$(color none)\n"
+      
+      echo -e "  [list | ls]"
+      echo -e "\t$(color yellow)Print all bookmarks.\n"\
+        "\t[Alias 'bl' -> 'bookmarks ls']$(color none)\n"
+      
+      echo -e "  [jump | j | cd] [NAME]"
+      echo -e "\t$(color yellow)Change working directory to [NAME].\n"\
+        "\t[Alias 'bj' -> 'bookmarks j']$(color none)\n"
 
+      echo -e "  [remove | rm] [NAME]"
+      echo -e "\t$(color yellow)Remove bookmark named [NAME].$(color none)\n"
+
+      echo -e "  [remove-all | rma] [NAME]"
+      echo -e "\t$(color yellow)Erase list of saved bookmarks.$(color none)\n"
     ;;
   esac
 }

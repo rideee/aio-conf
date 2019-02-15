@@ -43,11 +43,3 @@ alias umount-riddevATriddev='sudo umount /mnt/riddevATriddev'
 
 # Tree.
 [ "$(type tree 2>/dev/null)" ] && alias tree='tree -C'
-
-# Other.
-alias rgoimp="/home/rid/.rid/sh/rid-goimports.sh"
-alias serve="browser-sync start --server --files \"css/*.css, *.css, *.html\""
-alias srv='bash /home/rid/.rid/sh/srv.sh'
-alias watchTree='bash /home/rid/.rid/sh/watchTree.sh'
-alias rwt='watchTree'
-
