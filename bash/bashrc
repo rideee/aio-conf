@@ -2,7 +2,6 @@
 # Check readme for more informations.
 #
 # Author: Michal Katnik (github.com/rideee).
-# License: GPL.
 #
 # For manually connection use:
 #   ln -s [this_file] ~/.bashrc
@@ -22,8 +21,7 @@ source "$BASHRC_MODULES/autoload.sh"
 # General config - use vigeneral for editing this file.
 source "$BASHRC_MODULES/general.sh"
 
-# $PS1-GIT - For more informations use:
-#   head -n 15 $BASHRC_MODULES/ps1-git.sh | tail -n 10
+# $PS1-GIT 
 source "$BASHRC_MODULES/ps1-git.sh"
 
 # Aliases - use vialiases for editing this file.
