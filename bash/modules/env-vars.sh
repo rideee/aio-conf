@@ -16,3 +16,11 @@ export PATH=/home/rid/go/bin:$PATH
 # This is user definded path to all own executable shell scripts.
 export PATH=/home/rid/sh/exec:$PATH
 
+# Java 11 - OpenJDK 11
+#export PATH=/usr/lib/jvm/java-11-openjdk/bin:$PATH
+
+# Oracle Java 8 - JDK SE 8
+#export PATH=/usr/lib/jvm/jdk1.8.0_201/bin:$PATH
+
+# Oracle Java 11 - JDK SE 11
+export PATH=/usr/lib/jvm/jdk-11.0.2/bin:$PATH
