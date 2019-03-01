@@ -15,15 +15,9 @@ alias ..='cd ..'
 # Reload .bashrc source.
 [ -f ~/.bashrc ] && alias reload='. ~/.bashrc'
 
-### Dependent on the OS ###
-# Arch Linux.
-alias systemctl='sudo systemctl'
-alias hibernate='systemctl hibernate'
-alias pacman='sudo pacman'
-alias pacnc='pacman --noconfirm'
-alias pacSyyu='pacman -Syyu --noconfirm'
-alias aur='yaourt'
-alias aurnc='yaourt --noconfirm'
+# Private aliases.
+[ -f $BASHRC_MODULES/private-aliases.sh ] \
+  && . $BASHRC_MODULES/private-aliases.sh
 
 ### Dependent on third-party packages ###
 # Tmux.
@@ -34,12 +28,6 @@ alias aurnc='yaourt --noconfirm'
 
 # Atom package manager.
 [ "$(type apm 2>/dev/null)" ] && alias apm='apm --color'
-
-# SSHFS - riddev.eu.
-alias mount-ridATriddev='sshfs rid@riddev.eu:/home/rid /mnt/ridATriddev'
-alias umount-ridATriddev='sudo umount /mnt/ridATriddev'
-alias mount-riddevATriddev='sshfs riddev@riddev.eu:/var/www/html/riddev/public /mnt/riddevATriddev'
-alias umount-riddevATriddev='sudo umount /mnt/riddevATriddev'
 
 # Tree.
 [ "$(type tree 2>/dev/null)" ] && alias tree='tree -C'
