@@ -14,18 +14,20 @@
 # .bashrc, even if this file is store in $HOME directory.
 BASHRC_MODULES="/home/rid/.aio-conf/bash/modules"
 
-# Auto loader - use autoloader for manage auto loaded scripts.
+# Auto loader - use autoloader to manage auto loaded scripts.
 # Run 'autoloader help' for more informations.
 source "$BASHRC_MODULES/autoload.sh"
 
-# General config - use vigeneral for editing this file.
+# General config - use vigeneral to edit this file.
 source "$BASHRC_MODULES/general.sh"
 
 # $PS1-GIT 
 source "$BASHRC_MODULES/ps1-git.sh"
 
-# Aliases - use vialiases for editing this file.
+# Aliases - use vialiases to edit this file. 
+# This file also import another file with private aliases,
+# use viprivaliases to edit.
 source "$BASHRC_MODULES/aliases.sh"
 
-# Environment variables - use vienvs for editing this file.
+# Environment variables - use vienvs to edit this file.
 source "$BASHRC_MODULES/env-vars.sh"

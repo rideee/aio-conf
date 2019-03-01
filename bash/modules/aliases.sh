@@ -16,8 +16,11 @@ alias ..='cd ..'
 [ -f ~/.bashrc ] && alias reload='. ~/.bashrc'
 
 # Private aliases.
+# Use viprivatealiases to edit this file 
 [ -f $BASHRC_MODULES/private-aliases.sh ] \
-  && . $BASHRC_MODULES/private-aliases.sh
+  && . $BASHRC_MODULES/private-aliases.sh \
+  && alias viprivaliases="$EDITOR $BASHRC_MODULES/private-aliases.sh"
+
 
 ### Dependent on third-party packages ###
 # Tmux.
