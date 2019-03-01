@@ -1,9 +1,7 @@
 # modules/autoload/color.sh
-# color.sh
+#
 # Author: Michal Katnik (github.com/rideee)
-# Version: 0.1
-# License: GPL
-
+#
 # This is automatically loaded function.
 # It simply print ANSI Escape Sequence, for colorful output.
 # It is very limitted for now, maybe in future will be improved.

@@ -1,4 +1,7 @@
 # modules/autoload/vimodules.sh
+#
+# Author: Michal Katnik (github.com/rideee)
+
 
 # Shortcuts for editing modules.
 function vialiases() {

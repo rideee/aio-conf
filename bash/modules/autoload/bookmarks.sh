@@ -1,7 +1,6 @@
 # modules/autoload/bookmarks.sh
 #
 # Author Michal Katnik (github.com/rideee)
-# License: GPL.
 #
 # Script bookmarks.sh stores paths in file,
 # and allows you to manage them by using bookmarks or bms command.
