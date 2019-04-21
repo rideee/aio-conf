@@ -34,3 +34,6 @@ alias ..='cd ..'
 
 # Tree.
 [ "$(type tree 2>/dev/null)" ] && alias tree='tree -C'
+
+# npm
+alias npmr='npm run'

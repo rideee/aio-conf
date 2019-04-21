@@ -5,7 +5,7 @@
 export LC_MESSAGES=C
 
 # Vim as default editor.
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # Golang.
 export GOPATH='/home/rid/go'

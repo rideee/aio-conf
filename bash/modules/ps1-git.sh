@@ -11,7 +11,7 @@ function ps1-git() {
   #local PS1_ARW="\[\033[1;92m\]>\[$(tput sgr0)\]"
   #local PS1_USR="\[$(color lblue)\]\u\[$(color none)\]"
   #local PS1_HOST="\[$(color lgreen)\]\h\[$(color none)\]"
-  local PS1_DIR="\[$(color yellow)\]\w\[$(color none)\]"
+  local PS1_DIR="\[$(color yellow)\]\W\[$(color none)\]"
   local PS1_PROMCHAR="\[$(color lblue)\]$\[$(color none)\]"
   
   # Check if root.
@@ -31,7 +31,7 @@ function ps1-git() {
     PS1_GIT+="\[$(color lblue)\]) "
   fi
 
-  export PS1="\[\e[100m\]$PS1_GIT$PS1_DIR\[\e[0m\] $PS1_PROMCHAR "
+  export PS1="$PS1_GIT$PS1_DIR $PS1_PROMCHAR "
 }
 
 ps1-git
@@ -40,4 +40,9 @@ ps1-git
 function cd() {
   builtin cd "$@"
   ps1-git
+}
+
+# ps1-short
+function ps1-short() {
+  export PS1="\[$(color lblue)\]$\[$(color none)\] "
 }
