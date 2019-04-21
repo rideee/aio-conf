@@ -1,0 +1,23 @@
+[
+	{
+		"name": "felsuma-project",
+		"rootPath": "/home/rid/angular/felsuma-project",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "Tutorial: The Hero Editor (Official)",
+		"rootPath": "/home/rid/angular/tutorial-hero-editor",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "stach-bud",
+		"rootPath": "/home/rid/dev/web/stach-bud",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	}
+]

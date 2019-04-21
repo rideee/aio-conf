@@ -1,0 +1,143 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "workbench.colorTheme": "One Dark Pro",
+  "window.menuBarVisibility": "default",
+  "editor.formatOnType": true,
+  "editor.snippetSuggestions": "bottom",
+  "editor.tabSize": 2,
+  "scss.lint.duplicateProperties": "warning",
+  "scss.lint.ieHack": "warning",
+  "scss.lint.universalSelector": "warning",
+  "editor.fontSize": 15,
+  "window.zoomLevel": 1,
+  "editor.cursorBlinking": "solid",
+  "vim.easymotion": true,
+  "vim.easymotionMarkerFontSize": "15",
+  "vim.easymotionMarkerFontWeight": "bold",
+  "vim.easymotionMarkerFontFamily": "CodeNewRoman Nerd Font Mono",
+  "vim.easymotionMarkerForegroundColorOneChar": "coral",
+  "vim.easymotionMarkerBackgroundColor": "#1d1d1d",
+  "editor.fontFamily": "CodeNewRoman Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "vim.statusBarColorControl": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#21252b",
+    "statusBar.noFolderBackground": "#21252b",
+    "statusBar.debuggingBackground": "#21252b"
+  },
+  "vim.statusBarColors.insert": "#254a70",
+  "vim.statusBarColors.normal": "#21252b",
+  "vim.statusBarColors.visual": "#381c55",
+  "vim.statusBarColors.replace": "#530029",
+  "vim.statusBarColors.visualline": "#381c55",
+  "vim.statusBarColors.visualblock": "#381c55",
+  "vim.useSystemClipboard": true,
+  "vim.visualstar": true,
+  "vim.easymotionMarkerForegroundColorTwoChar": "coral",
+  "editor.rulers": [80, 120],
+  "vim.normalModeKeyBindingsNonRecursive": [{
+      "before": ["<C-]>"],
+      "commands": [":tabn"]
+    },
+    {
+      "before": ["<C-[>"],
+      "commands": [":tabp"]
+    },
+    {
+      "before": ["enter"],
+      "after": ["O", "<ESC>"]
+    }
+  ],
+  // "vim.visualModeKeyBindings": [
+  //     {
+  //         "before":["\""],
+  //         "after": ["c", "\"\"", "<ESC>", "p"]
+  //     }
+  // ],
+  // "phpSniffer.executablesFolder": "/home/rid/.config/composer/vendor/squizlabs/php_codesniffer/bin/",
+  "php-cs-fixer.autoFixBySemicolon": true,
+  "php-cs-fixer.executablePath": "/home/rid/.config/composer/vendor/bin/php-cs-fixer",
+  "[php]": {
+    "editor.tabSize": 4
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.includeLanguages": {
+    "twig": "html",
+    "vue": "vue-html"
+  },
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 120,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "editor.formatOnSave": true,
+  "vim.foldfix": true,
+  "vim.sneak": true,
+  "vim.sneakUseIgnorecaseAndSmartcase": true,
+  "vim.substituteGlobalFlag": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.openSideBySideDirection": "down",
+  "workbench.editor.tabSizing": "shrink",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.scrollback": 5000,
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "terminal.integrated.shellArgs.linux": [
+    "/home/rid/.aio-conf/vscode/customSettings/tmux-init.vscode.sh"
+  ],
+  "vim.hlsearch": true,
+  "vim.debug.silent": true,
+  "html.format.endWithNewline": true,
+  "bookmarks.backgroundLineColor": "rgba(66, 165, 245, .1)",
+  "openTheWebPage": {
+    "Angular/": {
+      "Angular": "https:/angular.io"
+    }
+  },
+  "workbench.editor.showTabs": true,
+  "gitlens.blame.toggleMode": "window",
+  "gitlens.heatmap.toggleMode": "window",
+  "gitlens.recentChanges.toggleMode": "window",
+  "projectManager.showProjectNameInStatusBar": false,
+  "workbench.statusBar.feedback.visible": false,
+  "explorer.autoReveal": true,
+  "workbench.activityBar.visible": false,
+  "color-highlight.matchWords": true,
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "[html]": {},
+  "files.associations": {
+    "*.html": "html"
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.format.insertSpaceAfterCommaDelimiter": false,
+  "tslint.ignoreDefinitionFiles": false,
+  "eslint.run": "onSave",
+  "prettier.jsxSingleQuote": true,
+  "typescriptHero.imports.organizeOnSave": true,
+  "javascript.format.enable": false,
+  "typescriptHero.imports.multiLineTrailingComma": false,
+  "typescriptHero.imports.removeTrailingIndex": false,
+  "files.trimTrailingWhitespace": true,
+  "vetur.format.scriptInitialIndent": true,
+  "prettier.singleQuote": true,
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "singleQuote": true
+    },
+    "prettyhtml": {
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    }
+  },
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "gitlens.codeLens.enabled": false,
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "prettier.arrowParens": "always",
+  "vetur.format.styleInitialIndent": true,
+  "vetur.completion.autoImport": false
+}
