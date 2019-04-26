@@ -1,0 +1,8 @@
+.git
+bash/modules/private-aliases.sh
+vim/after
+vim/bundle
+vim/autoload
+vim/colors
+vscode/workspaceStorage
+vscode/globalStorage

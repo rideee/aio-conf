@@ -19,6 +19,7 @@ Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'justinmk/vim-sneak'
 
 Plugin 'scrooloose/syntastic'
 Plugin 'roktas/syntastic-more'
