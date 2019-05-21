@@ -3,8 +3,8 @@
 #
 # Author: Michal Katnik (github.com/rideee).
 #
-# For manually connection use:
-#   ln -s [this_file] ~/.bashrc
+# Source this file to your .bashrc or link it.
+
 
 # If not running interactively, don't do anything.
 [[ $- != *i* ]] && return

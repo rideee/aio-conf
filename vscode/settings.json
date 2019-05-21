@@ -4,7 +4,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.formatOnPaste": true,
   "workbench.colorTheme": "One Dark Pro",
-  "window.menuBarVisibility": "default",
+  "window.menuBarVisibility": "toggle",
   "editor.formatOnType": true,
   "editor.snippetSuggestions": "bottom",
   "editor.tabSize": 2,
