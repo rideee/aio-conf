@@ -7,14 +7,16 @@ export LC_MESSAGES=C
 # Vim as default editor.
 export EDITOR='nvim'
 
+# Local binary files
+export PATH=/home/rid/.local/bin:$PATH
+
+# Executable scripts
+export PATH=/home/rid/.local/exec:$PATH
+
 # Golang.
 export GOPATH='/home/rid/go'
 export GOBIN='/home/rid/go/bin'
-export PATH=/home/rid/go/bin:$PATH
-
-# Shell scripts.
-# This is user definded path to all own executable shell scripts.
-export PATH=/home/rid/sh/exec:$PATH
+export PATH=/home/rid/.local/gobin:$PATH
 
 # Java 11 - OpenJDK 11
 #export PATH=/usr/lib/jvm/java-11-openjdk/bin:$PATH
